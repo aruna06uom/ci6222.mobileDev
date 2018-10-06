@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="trips_array">
+        <item>Official</item>
+        <item>Vacation</item>
+        <item>Other</item>
+    </string-array>
+</resources>
