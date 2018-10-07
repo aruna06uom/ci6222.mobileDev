@@ -26,6 +26,7 @@ public class AddTripActivity extends AppCompatActivity {
 
     public void onStartDateClick(View v) {
 
+
         startDate = (EditText) findViewById(R.id.startdate);
         // calender class's instance and get current date , month and year from calender
         final Calendar c = Calendar.getInstance();

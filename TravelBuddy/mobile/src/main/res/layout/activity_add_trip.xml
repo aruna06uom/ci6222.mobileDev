@@ -9,7 +9,7 @@
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="294dp"
+        android:layout_width="303dp"
         android:layout_height="43dp"
         android:layout_marginEnd="32dp"
         android:layout_marginStart="32dp"
@@ -60,7 +60,7 @@
 
     <Spinner
         android:id="@+id/tripType"
-        android:layout_width="307dp"
+        android:layout_width="160dp"
         android:layout_height="39dp"
         android:layout_marginBottom="289dp"
         android:layout_marginEnd="32dp"
@@ -69,22 +69,10 @@
         android:entries="@array/trips_array"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintHorizontal_bias="0.137"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/startdate" />
-
-    <com.google.android.gms.maps.MapView
-        android:id="@+id/mapView2"
-        android:layout_width="271dp"
-        android:layout_height="119dp"
-        android:layout_marginBottom="109dp"
-        android:layout_marginEnd="58dp"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="61dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tripType" />
+        app:layout_constraintTop_toBottomOf="@+id/startdate"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </android.support.constraint.ConstraintLayout>

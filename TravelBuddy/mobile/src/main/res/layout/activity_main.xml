@@ -1,18 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
-    <!--xmlns:tools="http://schemas.android.com/tools"-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hometrip"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/topic"
+        android:layout_width="259dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
+
+        android:layout_marginTop="125dp"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:fontFamily="sans-serif-medium"
+
+        android:inputType="none"
+        android:text="Travel Buddy"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="38dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/addTrip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/addTrip"
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="75dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="34dp"
+        android:onClick="addNewTrip"
+        android:text="Add Trip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topic"
+        tools:background="@android:style/ButtonBar" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="172dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="2dp"
+        android:background="#51cebfbf"
+        android:onClick="viewTrips"
+        android:text="@string/view_trips"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addTrip"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</android.support.constraint.ConstraintLayout>
+
+
+<!--<tools:RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
     <!--android:layout_width="match_parent"-->
     <!--android:layout_height="match_parent"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:orientation="vertical"-->
     <!--tools:context=".MainActivity">-->
+<!--android:background="@drawable/hometrip"-->
 
 
-    <!--<ImageView-->
-        <!--android:src="@drawable/home-trip"-->
-        <!--android:id="@+id/im1"-->
-        <!--android:scaleType="fitXY"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:layout_width="match_parent"/>-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/topic"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:ems="10"-->
+        <!--android:inputType="none"-->
+        <!--android:text="Travel Buddy"-->
+
+        <!--android:clickable="false"-->
+        <!--android:cursorVisible="false"-->
+        <!--android:focusable="false"-->
+        <!--android:focusableInTouchMode="false"-->
+        <!--android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+        <!--tools:layout_editor_absoluteX="45dp"-->
+        <!--tools:layout_editor_absoluteY="245dp"-->
+
+        <!--android:fontFamily="sans-serif-medium"-->
+        <!--android:textStyle="bold|italic"-->
+        <!--android:textSize="38dp"-->
+
+        <!--android:layout_marginBottom="130dp"-->
+        <!--android:layout_marginTop="200dp"-->
+        <!--android:layout_marginEnd="50dp"-->
+        <!--android:layout_marginStart="80dp"-->
+
+        <!--/>-->
+
 
     <!--<Button-->
         <!--android:id="@+id/addTrip"-->
@@ -21,63 +118,12 @@
         <!--android:onClick="addNewTrip"-->
         <!--android:text="Add Trip"-->
         <!--tools:layout_editor_absoluteX="148dp"-->
-        <!--tools:layout_editor_absoluteY="193dp" />-->
+        <!--tools:layout_editor_absoluteY="193dp"-->
 
+        <!--android:layout_marginBottom="150dp"-->
+        <!--android:layout_marginTop="350dp"-->
+        <!--android:layout_marginEnd="120dp"-->
+        <!--android:layout_marginStart="120dp"-->
+        <!--/>-->
 
-<!--</android.support.constraint.ConstraintLayout>-->
-
-
-<tools:RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:background="@drawable/hometrip"
-    tools:context=".MainActivity">
-
-
-
-    <EditText
-        android:id="@+id/topic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="none"
-        android:text="Travel Buddy"
-
-        android:clickable="false"
-        android:cursorVisible="false"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="245dp"
-
-        android:fontFamily="sans-serif-medium"
-        android:textStyle="bold|italic"
-        android:textSize="38dp"
-
-        android:layout_marginBottom="130dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginStart="80dp"
-
-        />
-
-
-    <Button
-        android:id="@+id/addTrip"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="addNewTrip"
-        android:text="Add Trip"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="193dp"
-
-        android:layout_marginBottom="150dp"
-        android:layout_marginTop="350dp"
-        android:layout_marginEnd="120dp"
-        android:layout_marginStart="120dp"
-        />
-
-</tools:RelativeLayout>
+<!--</tools:RelativeLayout>-->
