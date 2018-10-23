@@ -1,9 +1,11 @@
-package demo.mobile.msc.ntu.travelbuddy;
+package demo.mobile.msc.ntu.travelbuddy.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import demo.mobile.msc.ntu.travelbuddy.R;
 
 public class MainActivity extends AppCompatActivity {
 

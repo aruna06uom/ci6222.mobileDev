@@ -11,16 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AddTripActivity" />
+        <activity android:name=".activities.AddTripActivity" />
         <activity
-            android:name=".ViewTripsActivity"
+            android:name=".activities.ViewTripsActivity"
             android:label="@string/title_activity_view_trips"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".ViewTripsActivity">
+    tools:context=".activities.ViewTripsActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
@@ -36,13 +36,20 @@
                 android:id="@+id/comingTrips"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/view_trips_coming" />
+                android:text="@string/view_trips_coming"/>
+
 
             <android.support.design.widget.TabItem
                 android:id="@+id/pastTrips"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/view_trips_past" />
+
+            <!--<android.support.design.widget.TabItem-->
+                <!--android:id="@+id/pastTripssample"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/view_trips_past" />-->
 
         </android.support.design.widget.TabLayout>
     </android.support.design.widget.AppBarLayout>

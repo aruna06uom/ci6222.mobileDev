@@ -11,4 +11,5 @@
     <string name="view_trips_coming">Coming Trips</string>
     <string name="view_trips_past">Past Trips</string>
     <string name="view_trips">View Trips</string>
+    <string name="add">Add</string>
 </resources>

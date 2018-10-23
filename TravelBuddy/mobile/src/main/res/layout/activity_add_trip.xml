@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/background_light"
-    tools:context=".AddTripActivity">
+    tools:context=".activities.AddTripActivity">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/tripName"
         android:layout_width="303dp"
         android:layout_height="43dp"
         android:layout_marginEnd="32dp"
@@ -36,7 +36,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/enddate"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/tripName"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
@@ -55,7 +55,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/startdate"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/tripName"
         app:layout_constraintVertical_bias="0.0" />
 
     <Spinner
@@ -73,6 +73,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/startdate"
         app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="141dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="100dp"
+        android:onClick="onAddNewTrip"
+        android:text="@string/add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tripType" />
 
 
 </android.support.constraint.ConstraintLayout>

@@ -1,4 +1,4 @@
-package demo.mobile.msc.ntu.travelbuddy;
+package demo.mobile.msc.ntu.travelbuddy.activities;
 
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
@@ -18,6 +18,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import android.widget.TextView;
+
+import demo.mobile.msc.ntu.travelbuddy.R;
 
 public class ViewTripsActivity extends AppCompatActivity {
 
