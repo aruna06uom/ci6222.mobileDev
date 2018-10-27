@@ -29,6 +29,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activities.view_trips_tabs" />
+        <activity
+            android:name=".activities.Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ViewTripsTabs"
+            android:label="@string/title_activity_view_trips_tabs"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.ComingTripsActivity" />
+        <activity android:name=".activities.PastTripsActivity"></activity>
     </application>
 
 </manifest>

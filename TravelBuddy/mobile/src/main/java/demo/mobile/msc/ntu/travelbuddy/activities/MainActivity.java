@@ -23,10 +23,21 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void viewTrips(View view) {
-
+    public void viewComingTrips(View view) {
         // Do something in response to button
         Intent intent = new Intent(this, ViewTripsActivity.class);
+        startActivity(intent);
+    }
+
+    public void viewPastTrips(View view) {
+        // Do something in response to button
+        Intent intent = new Intent(this, ViewTripsActivity.class);
+        startActivity(intent);
+    }
+
+    public void viewTripsTabs(View view) {
+        // Do something in response to button
+        Intent intent = new Intent(this, ViewTripsTabs.class);
         startActivity(intent);
     }
 }

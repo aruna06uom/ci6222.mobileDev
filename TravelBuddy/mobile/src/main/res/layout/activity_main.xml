@@ -52,7 +52,7 @@
         tools:background="@android:style/ButtonBar" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/viewComingTripsBtn"
         android:layout_width="@android:dimen/thumbnail_width"
         android:layout_height="wrap_content"
         android:layout_marginBottom="172dp"
@@ -60,14 +60,32 @@
         android:layout_marginStart="75dp"
         android:layout_marginTop="2dp"
         android:background="#51cebfbf"
-        android:onClick="viewTrips"
-        android:text="@string/view_trips"
+        android:onClick="viewTripsTabs"
+        android:text="@string/view_coming_trips"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addTrip"
         app:layout_constraintVertical_bias="0.0" />
+
+    <!--<Button-->
+        <!--android:id="@+id/viewPastTripsBtn"-->
+        <!--android:layout_width="@android:dimen/thumbnail_width"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="172dp"-->
+        <!--android:layout_marginEnd="75dp"-->
+        <!--android:layout_marginStart="75dp"-->
+        <!--android:layout_marginTop="2dp"-->
+        <!--android:background="#51cebfbf"-->
+        <!--android:onClick="viewPastTrips"-->
+        <!--android:text="@string/view_past_trips"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.428"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/addTrip"-->
+        <!--app:layout_constraintVertical_bias="0.0" />-->
 
 
 </android.support.constraint.ConstraintLayout>
